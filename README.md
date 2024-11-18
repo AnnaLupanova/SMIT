@@ -5,11 +5,13 @@
 ## Getting started
 Clone repo
 ```
+git init
 git clone <path_repo>
+cd SMIT
 ```
-Create .env file and insert data
+Create .env file and insert data (for example run command **vi .env**)
 ```
-DATABASE_URL="postgresql+asyncpg://{user}:{password}@{host}:5432/insurance_api">
+DATABASE_URL="postgresql+asyncpg://{user}:{password}@db:5432/insurance_api">
 POSTGRES_USER="{user}"
 POSTGRES_PASSWORD="{password}"
 ```
@@ -21,8 +23,8 @@ docker-compose up -d
 ```
 
 API documentation :
-- 127.0.0.1:8000/docs
-- 127.0.0.1:8000/redoc
+- localhost:8000/docs
+- localhost:8000/redoc
 
 Examples urls:
 -  curl -X 'GET' \
